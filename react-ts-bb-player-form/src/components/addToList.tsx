@@ -48,6 +48,13 @@ const AddToList: React.FC<IProps> = ({ setPeople, people }): JSX.Element => {
                 note: formInput.note
             }
         ]);
+
+        setInput({
+            name: "",
+            age: "",
+            url: "",
+            note: ""
+        })
     }
 
     return (<div className="AddToList">
