@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import List from "./components/List"
 
   /* interface creates type definitions for a given variable/object */
   interface IState{
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <h1>
         People Invited to my party
+        <List></List>
       </h1>
     </div>
 
