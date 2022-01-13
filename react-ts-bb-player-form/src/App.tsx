@@ -35,10 +35,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-        People Invited to my party
-        <List people={people}></List>
-      </h1>
+      <h1>People Invited to my party </h1>
+      <List people={people}></List>
       <AddToList people={people} setPeople={setPeople}></AddToList> {/*pass people and setPeople for array mutation*/}
     </div>
 
