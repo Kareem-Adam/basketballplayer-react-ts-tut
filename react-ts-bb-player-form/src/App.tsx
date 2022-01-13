@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import List from "./components/List"
+import AddToList from './components/addToList';
 
   /* interface creates type definitions for a given variable/object */
   interface IState{
@@ -37,6 +38,7 @@ function App() {
         People Invited to my party
         <List people={people}></List>
       </h1>
+      <AddToList/>
     </div>
 
   );
