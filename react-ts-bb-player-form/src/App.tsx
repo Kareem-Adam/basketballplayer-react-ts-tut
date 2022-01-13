@@ -17,6 +17,7 @@ function App() {
 
   const [people, setPeople] = useState<IState["people"]>([])
 
+
   return (
     <div className="App">
       <h1>
