@@ -39,6 +39,7 @@ const AddToList: React.FC<IProps> = ({ setPeople, people }): JSX.Element => {
             !formInput.age 
         ) { return }
 
+        /* store list data */
         setPeople([
             ...people, //destructure array 
             {
@@ -49,6 +50,7 @@ const AddToList: React.FC<IProps> = ({ setPeople, people }): JSX.Element => {
             }
         ]);
 
+        /* clear fields */
         setInput({
             name: "",
             age: "",
@@ -87,7 +89,7 @@ const AddToList: React.FC<IProps> = ({ setPeople, people }): JSX.Element => {
             name="note"
 
         />
-        <button className="AddToList" onClick = {handleClick}>
+        <button className="AddToList-btn" onClick = {handleClick}>
             Add to list
         </button>
     </div>)
