@@ -79,7 +79,7 @@ const AddToList: React.FC<IProps> = ({ setPeople, people }): JSX.Element => {
             className="AddToList-input"
             value={formInput.url}
             onChange={handleChange}
-            name="img"
+            name="url"
         />
         <textarea
             placeholder="Notes"
