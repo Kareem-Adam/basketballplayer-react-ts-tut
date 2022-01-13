@@ -18,13 +18,13 @@ const List: React.FC<IProps> = ({ people }) => {
         /* duplicate and render array values */
         return people.map(person => {
             return (
-                <li className="List">
+                <li key = {person.name} className="List">
                     <div className="List-header">
-                        <img className="List-img" src={person.url} />
-                        <h2>{person.age}</h2>
+                        <img className="List-img" src={person.url}/>
+                        <h2 >{person.name}</h2>
                     </div>
-                    <p>{person.age} years old</p>
-                    <p className="List-note">{person.note}</p>
+                    <p >{person.age} years old</p>
+                    <p  className="List-note">{person.note}</p>
                 </li>
             )
         })
