@@ -5,7 +5,8 @@ import List from "./components/List"
 import AddToList from './components/addToList';
 
   /* interface creates type definitions for a given variable/object */
-  interface IState{
+  /* exported for use in child */
+  export interface IState{
     people: {
       name: string
       age: number 
@@ -38,7 +39,7 @@ function App() {
         People Invited to my party
         <List people={people}></List>
       </h1>
-      <AddToList/>
+      <AddToList people={people} setPeople={setPeople}></AddToList> {/*pass people and setPeople for array mutation*/}
     </div>
 
   );
